@@ -71,7 +71,7 @@ a:hover{
     display: flex;
 }
 nav{
-    width: clamp(30%, 1vw, 25%);
+    width: clamp(20%, 1vw, 25%);
     height: 100%;
     background-color: #ffd2af;
     padding: 3vw;
@@ -86,7 +86,7 @@ nav{
 #ul-list{
     margin-top: 20px;
     margin-left: 10px;
-    font-size: clamp(0.7rem, 2vw, 1.5rem);
+    font-size: clamp(0.7rem, 2vw, 1rem);
     display: flex;
     flex-direction: column;
     justify-content: left;
@@ -103,4 +103,13 @@ main{
     margin-left: 20px;
 }
 
+#pag-inicial{
+    color: #d96811dd;
+    margin-bottom: 30px;
+}
+
+#pagInicial-pri, #pagInicial-seg, #pagInicial-ter{
+    text-indent: 3rem;
+    text-align: justify;
+}
 
