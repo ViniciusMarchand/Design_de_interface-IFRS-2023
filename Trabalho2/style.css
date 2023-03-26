@@ -23,10 +23,12 @@ header{
     justify-content: space-evenly;
     font-size: 2vw;
 
+
 }
 
-img{
-    height: 125px;
+header img{
+    height: 10vw;
+
 }
 
 .logo{
