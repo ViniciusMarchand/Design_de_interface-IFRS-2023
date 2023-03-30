@@ -146,3 +146,56 @@ footer{
 .footer-middle{
     text-align: center;
 }
+
+.container-cadastro{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(135deg, rgba(200,90,6,1) 0%, rgba(217,104,17,1) 35%, rgba(255,154,76,1) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-cadastro{
+    width: 350px;
+    height: 450px;
+    background-color: #fdfdfd;
+    border-radius: 3px;
+    padding: 25px;
+    
+}
+
+.title-cadastro{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+legend{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+fieldset{
+    border: none;
+}
+
+.campo-cadastro{
+    margin-top: 20px;
+}
+
+fieldset input{
+    margin-top: 5px;
+    display: block;
+    padding-left: 4px;
+    width: 300px;
+    border-radius: 3px;
+    height: 30px;
+}
+
+fieldset label{
+    font-size: 20px;
+    font-weight: bold;
+}
+
