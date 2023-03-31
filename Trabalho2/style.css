@@ -64,7 +64,7 @@ nav a{
 
 #ultimo-item{
     border-right: hidden;
-    font-size: 20px;
+
 }
 .logo{
     width: 43vw;
@@ -125,7 +125,7 @@ main h1{
 }
 
 main p{
-    font-size: clamp(11px,1.34vw,20px);
+    font-size: clamp(12px,1.34vw,20px);
 }
 
 #pag-inicial{
