@@ -6,11 +6,15 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    
 }
 
+
+
 .container{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
+    flex-wrap: wrap;
     
     
 }
@@ -51,7 +55,8 @@ nav{
     justify-content: center;
     align-items: center;
     font-weight: bold;
-    font-size: clamp(14px, 2vw, 18px);
+    font-size: clamp(10px, 2vw, 18px);
+
 
 }
 
@@ -282,8 +287,10 @@ fieldset label{
 }
 
 .receita{
-    width: clamp(150px,19vw,20vw);
-    height: clamp(150px,19vw,20vw);
+    width: clamp(200px,19vw,20vw);
+    height: clamp(200px,19vw,20vw);
     background-color: black;
     margin-bottom: 10px;
+    
 }
+
