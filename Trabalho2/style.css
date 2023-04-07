@@ -15,8 +15,7 @@
     width: 100vw;
     min-height: 100vh;
     max-height: 200vh;
-
-
+    
 }
 
 header {
@@ -28,9 +27,9 @@ header {
     align-items: center;
     justify-content: space-evenly;
     backdrop-filter: blur(40px);
-
     font-weight: bold;
     font-size: clamp(1rem, 2vw, 2rem);
+    
 }
 
 header p {
@@ -38,13 +37,11 @@ header p {
     font-weight: bold;
     margin-left: 5px;
     margin-right: 5px;
-
+    
 }
 
 header img {
     height: 95px;
-
-
 }
 
 nav {
@@ -57,7 +54,7 @@ nav {
     align-items: center;
     font-weight: bold;
     font-size: clamp(10px, 2vw, 18px);
-
+    
 
 }
 
@@ -66,31 +63,36 @@ nav a {
     border-right: 1px solid #fdfdfd;
     padding-right: clamp(2px, 2vw, 20px);
     padding-left: clamp(2px, 2vw, 20px);
+    
 }
 
 #ultimo-item {
     border-right: hidden;
-
+    
 }
 
 .logo {
     width: 43vw;
+    
 }
 
 .options {
     width: 30%;
     display: flex;
     justify-content: space-evenly;
+    
 }
 
 a {
     text-decoration: none;
     color: white;
+    
 }
 
 a:hover {
     color: lightgreen;
     transition: 0.75s;
+    
 }
 
 .content {
@@ -98,6 +100,7 @@ a:hover {
     width: 80%;
     height: 70%;
     display: flex;
+    
 }
 
 
@@ -105,6 +108,7 @@ a:hover {
 #receitas-title {
     font-size: clamp(0.75rem, 2vw, 1.5rem);
     font-weight: bold;
+    
 }
 
 #ul-list {
@@ -119,6 +123,7 @@ a:hover {
 
 li {
     margin-top: 5px;
+    
 }
 
 main {
@@ -126,7 +131,7 @@ main {
     width: 100%;
     height: 100%;
     margin-left: 20px;
-
+    
 }
 
 main h1 {
@@ -140,6 +145,8 @@ main p {
 #pag-inicial {
     color: #d96811dd;
     margin-bottom: 30px;
+    
+    
 }
 
 #pagInicial-pri,
@@ -147,17 +154,17 @@ main p {
 #pagInicial-ter {
     text-indent: 3rem;
     text-align: justify;
+    
 }
 
 footer {
-
     height: 150px;
     width: 100vw;
     background-color: black;
     display: flex;
     justify-content: center;
     justify-items: center;
-
+    
 }
 
 #title-footer {
@@ -170,10 +177,12 @@ footer {
 #contato-text {
     width: 100%;
     color: #fdfdfd;
+    
 }
 
 .footer-middle {
     text-align: center;
+    
 }
 
 .container-cadastro {
@@ -183,6 +192,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .page-cadastro {
@@ -199,7 +209,7 @@ footer {
     background-color: #fdfdfd;
     border-radius: 3px;
     padding: 25px;
-
+    
 }
 
 
@@ -208,6 +218,7 @@ footer {
     display: flex;
     justify-content: center;
     font-weight: bold;
+    
 }
 
 .title-entrar {
@@ -216,15 +227,18 @@ footer {
     justify-content: center;
     font-weight: bold;
     font-size: 10px;
+    
 }
 
 legend {
     font-size: 28px;
     margin-bottom: 20px;
+    
 }
 
 fieldset {
     border: none;
+    
 }
 
 .campo-cadastro {
@@ -238,11 +252,13 @@ fieldset input {
     width: 300px;
     border-radius: 3px;
     height: 30px;
+    
 }
 
 fieldset label {
     font-size: 20px;
     font-weight: bold;
+    
 }
 
 #field-input-check {
@@ -250,19 +266,21 @@ fieldset label {
     width: 100%;
     justify-content: space-around;
     align-items: center;
-
+    
+    
 }
 
 #field-input-check input {
     display: flex;
     width: 20px;
+    
 }
 
 .buttons {
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    
     width: 100%;
     height: 70px;
 }
@@ -276,6 +294,7 @@ fieldset label {
     font-weight: bold;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.427);
     cursor: pointer;
+    
 }
 
 #voltar {
@@ -308,6 +327,8 @@ fieldset label {
     width: 100%;
     height: 100%;
     flex-wrap: wrap;
+    
+    
 
 }
 
@@ -316,6 +337,7 @@ fieldset label {
     height: clamp(200px, 19vw, 20vw);
     background-color: #a15012;
     margin-bottom: 10px;
+    
 
 }
 
@@ -333,7 +355,7 @@ fieldset label {
     background-color: rgb(121, 121, 121);
     width: 80%;
     height: 1px;
-
+    
 }
 
 .receita-img{
@@ -352,4 +374,5 @@ fieldset label {
     font-weight: bold;
     font-size: clamp(12px,2vw,15px);
     margin-top: 2px;
+    
 }
