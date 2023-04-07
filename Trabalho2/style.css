@@ -193,12 +193,29 @@ footer {
     padding: 25px;
 
 }
+.page-entrar {
+    width: 350px;
+    height: 210px;
+    background-color: #fdfdfd;
+    border-radius: 3px;
+    padding: 25px;
+
+}
+
 
 .title-cadastro {
     width: 100%;
     display: flex;
     justify-content: center;
     font-weight: bold;
+}
+
+.title-entrar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 10px;
 }
 
 legend {
