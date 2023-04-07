@@ -6,20 +6,20 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    
+
 }
 
 
 
-.container{
+.container {
     width: 100vw;
-    height: 100vh;
-    flex-wrap: wrap;
-    
-    
+    min-height: 100vh;
+    max-height: 200vh;
+
+
 }
 
-header{
+header {
     background-color: #d96811dd;
     width: 100%;
     height: 15%;
@@ -30,23 +30,24 @@ header{
     backdrop-filter: blur(40px);
 
     font-weight: bold;
-    font-size: clamp(1rem, 2vw , 2rem);
+    font-size: clamp(1rem, 2vw, 2rem);
 }
-header p{
+
+header p {
     color: #fdfdfd;
     font-weight: bold;
     margin-left: 5px;
     margin-right: 5px;
-    
+
 }
 
-header img{
+header img {
     height: 95px;
 
 
 }
 
-nav{
+nav {
     width: 100%;
     height: 50px;
     background-color: #a15012;
@@ -60,37 +61,39 @@ nav{
 
 }
 
-nav a{
+nav a {
     cursor: pointer;
     border-right: 1px solid #fdfdfd;
-    padding-right: clamp(2px,2vw,20px);
-    padding-left: clamp(2px,2vw,20px);
+    padding-right: clamp(2px, 2vw, 20px);
+    padding-left: clamp(2px, 2vw, 20px);
 }
 
-#ultimo-item{
+#ultimo-item {
     border-right: hidden;
 
 }
-.logo{
+
+.logo {
     width: 43vw;
 }
 
-.options{
+.options {
     width: 30%;
     display: flex;
     justify-content: space-evenly;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
 
-a:hover{
+a:hover {
     color: lightgreen;
     transition: 0.75s;
 }
-.content{
+
+.content {
     margin: auto;
     width: 80%;
     height: 70%;
@@ -99,54 +102,57 @@ a:hover{
 
 
 
-#receitas-title{
+#receitas-title {
     font-size: clamp(0.75rem, 2vw, 1.5rem);
     font-weight: bold;
 }
 
-#ul-list{
+#ul-list {
     margin-top: 20px;
     margin-left: 10px;
     font-size: clamp(0.7rem, 2vw, 1rem);
     display: flex;
     flex-direction: column;
     justify-content: left;
-    
+
 }
-li{
+
+li {
     margin-top: 5px;
 }
 
-main{
+main {
 
     width: 100%;
-    height: 30vw;
+    height: 100%;
     margin-left: 20px;
 
 }
 
-main h1{
-    font-size: clamp(25px,3vw,40px);
+main h1 {
+    font-size: clamp(25px, 3vw, 40px);
 }
 
-main p{
-    font-size: clamp(12px,1.34vw,20px);
+main p {
+    font-size: clamp(12px, 1.34vw, 20px);
 }
 
-#pag-inicial{
+#pag-inicial {
     color: #d96811dd;
     margin-bottom: 30px;
 }
 
-#pagInicial-pri, #pagInicial-seg, #pagInicial-ter{
+#pagInicial-pri,
+#pagInicial-seg,
+#pagInicial-ter {
     text-indent: 3rem;
     text-align: justify;
 }
 
-footer{
-    
+footer {
+
     height: 150px;
-    width: 100%;
+    width: 100vw;
     background-color: black;
     display: flex;
     justify-content: center;
@@ -154,61 +160,61 @@ footer{
 
 }
 
-#title-footer{
+#title-footer {
     color: #fdfdfd;
     font-weight: bold;
     margin-bottom: 5px;
 
 }
 
-#contato-text{
+#contato-text {
     width: 100%;
     color: #fdfdfd;
 }
 
-.footer-middle{
+.footer-middle {
     text-align: center;
 }
 
-.container-cadastro{
+.container-cadastro {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(135deg, rgba(200,90,6,1) 0%, rgba(217,104,17,1) 35%, rgba(255,154,76,1) 100%);
+    background: linear-gradient(135deg, rgba(200, 90, 6, 1) 0%, rgba(217, 104, 17, 1) 35%, rgba(255, 154, 76, 1) 100%);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.page-cadastro{
+.page-cadastro {
     width: 350px;
     height: 550px;
     background-color: #fdfdfd;
     border-radius: 3px;
     padding: 25px;
-    
+
 }
 
-.title-cadastro{
+.title-cadastro {
     width: 100%;
     display: flex;
     justify-content: center;
     font-weight: bold;
 }
 
-legend{
+legend {
     font-size: 28px;
     margin-bottom: 20px;
 }
 
-fieldset{
+fieldset {
     border: none;
 }
 
-.campo-cadastro{
+.campo-cadastro {
     margin-top: 20px;
 }
 
-fieldset input{
+fieldset input {
     margin-top: 5px;
     display: block;
     padding-left: 4px;
@@ -217,24 +223,25 @@ fieldset input{
     height: 30px;
 }
 
-fieldset label{
+fieldset label {
     font-size: 20px;
     font-weight: bold;
 }
 
-#field-input-check{
+#field-input-check {
     display: flex;
     width: 100%;
     justify-content: space-around;
     align-items: center;
+
 }
 
-#field-input-check input{
+#field-input-check input {
     display: flex;
     width: 20px;
 }
 
-.buttons{
+.buttons {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -243,7 +250,7 @@ fieldset label{
     height: 70px;
 }
 
-.buttons button{
+.buttons button {
     width: 100px;
     height: 50px;
     border-radius: 4px;
@@ -254,67 +261,77 @@ fieldset label{
     cursor: pointer;
 }
 
-#voltar{
+#voltar {
     background-color: rgb(255, 36, 36);
 }
 
-#voltar:hover{
+#voltar:hover {
     background-color: rgb(191, 34, 34);
 }
 
-#confirmar{
+#confirmar {
     background-color: green;
 }
 
-#confirmar:hover{
+#confirmar:hover {
     background-color: rgb(1, 85, 1);
 }
 
-.page-title{
+.page-title {
     color: #d96811dd;
     font-weight: bold;
-    font-size: clamp(25px,3vw,40px);
+    font-size: clamp(25px, 3vw, 40px);
     margin-bottom: 25px;
-    
+
 }
 
-.receitas{
+.receitas {
     display: flex;
     justify-content: space-around;
     width: 100%;
     height: 100%;
     flex-wrap: wrap;
+
 }
 
-.receita{
-    width: clamp(200px,19vw,20vw);
-    height: clamp(200px,19vw,20vw);
-    background-color: green;
+.receita {
+    width: clamp(200px, 19vw, 20vw);
+    height: clamp(200px, 19vw, 20vw);
+    background-color: #a15012;
     margin-bottom: 10px;
-    
+
 }
 
-.receita-image{
+.receita-image {
     width: 100%;
     height: 60%;
-
-
     display: flex;
     align-items: end;
     justify-content: center;
 
-    
-}
-
-.hr{
-background-color: rgb(121, 121, 121);
-width: 80%;
-height: 1px;
 
 }
 
-#macarrao_ao_molho_branco{
-    
+.hr {
+    background-color: rgb(121, 121, 121);
+    width: 80%;
+    height: 1px;
 
+}
+
+.receita-img{
+    width: 90%;
     
+}
+
+.receita-info{
+    width: 90%;
+    margin: auto;
+}
+
+.receita-info{
+    color: white;
+    font-weight: bold;
+    font-size: clamp(12px,2vw,15px);
+    margin-top: 2px;
 }
