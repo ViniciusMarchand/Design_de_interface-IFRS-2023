@@ -40,7 +40,7 @@ img {
 .container {
     width: 100vw;
     min-height: 100vh;
-    max-height: 200vh;
+    max-height: 400vh;
 
 }
 
@@ -427,4 +427,13 @@ h2 {
     color: #d96811dd;
     margin-bottom: 20px;
     margin-top: 20px;
+}
+
+figure img{
+    height: 300px;
+}
+
+#pRestaurante{
+    text-align: justify;
+    text-indent: 3rem;
 }
