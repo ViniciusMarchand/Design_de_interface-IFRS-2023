@@ -18,9 +18,7 @@ html {
     font-weight: normal;
   }
   
-  ol, ul {
-    list-style: none;
-  }
+
   
   img {
     max-width: 100%;
@@ -396,4 +394,10 @@ fieldset label {
 
 h4{
 font-weight: bold;
+}
+
+h2{
+    color: #d96811dd;
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
