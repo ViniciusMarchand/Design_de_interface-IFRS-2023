@@ -6,24 +6,35 @@ html {
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
-  }
-  
-  *, *:before, *:after {
+}
+
+*,
+*:before,
+*:after {
     box-sizing: inherit;
-  }
-  
-  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
     margin: 0;
     padding: 0;
     font-weight: normal;
-  }
-  
+}
 
-  
-  img {
+
+
+img {
     max-width: 100%;
     height: auto;
-  }
+}
 
 
 .container {
@@ -44,7 +55,7 @@ header {
     backdrop-filter: blur(40px);
     font-weight: bold;
     font-size: clamp(1rem, 2vw, 2rem);
-    
+
 }
 
 header p {
@@ -52,7 +63,7 @@ header p {
     font-weight: bold;
     margin-left: 5px;
     margin-right: 5px;
-    
+
 }
 
 header img {
@@ -69,7 +80,7 @@ nav {
     align-items: center;
     font-weight: bold;
     font-size: clamp(10px, 2vw, 18px);
-    
+
 
 }
 
@@ -78,36 +89,36 @@ nav a {
     border-right: 1px solid #fdfdfd;
     padding-right: clamp(2px, 2vw, 20px);
     padding-left: clamp(2px, 2vw, 20px);
-    
+
 }
 
 #ultimo-item {
     border-right: hidden;
-    
+
 }
 
 .logo {
     width: 43vw;
-    
+
 }
 
 .options {
     width: 30%;
     display: flex;
     justify-content: space-evenly;
-    
+
 }
 
 a {
     text-decoration: none;
     color: white;
-    
+
 }
 
 a:hover {
     color: lightgreen;
     transition: 0.75s;
-    
+
 }
 
 .content {
@@ -115,7 +126,7 @@ a:hover {
     width: 80%;
     height: 70%;
     display: flex;
-    
+
 }
 
 
@@ -123,7 +134,7 @@ a:hover {
 #receitas-title {
     font-size: clamp(0.75rem, 2vw, 1.5rem);
     font-weight: bold;
-    
+
 }
 
 #ul-list {
@@ -138,7 +149,7 @@ a:hover {
 
 li {
     margin-top: 5px;
-    
+
 }
 
 main {
@@ -146,7 +157,7 @@ main {
     width: 100%;
     height: 100%;
     margin-left: 20px;
-    
+
 }
 
 main h1 {
@@ -160,8 +171,8 @@ main p {
 #pag-inicial {
     color: #d96811dd;
     margin-bottom: 30px;
-    
-    
+
+
 }
 
 #pagInicial-pri,
@@ -169,7 +180,7 @@ main p {
 #pagInicial-ter {
     text-indent: 3rem;
     text-align: justify;
-    
+
 }
 
 footer {
@@ -179,7 +190,7 @@ footer {
     display: flex;
     justify-content: center;
     justify-items: center;
-    
+
 }
 
 #title-footer {
@@ -192,12 +203,12 @@ footer {
 #contato-text {
     width: 100%;
     color: #fdfdfd;
-    
+
 }
 
 .footer-middle {
     text-align: center;
-    
+
 }
 
 .container-cadastro {
@@ -207,7 +218,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .page-cadastro {
@@ -216,16 +227,17 @@ footer {
     background-color: #fdfdfd;
     border-radius: 3px;
     padding: 10px;
-    
+
 
 }
+
 .page-entrar {
     width: 350px;
     height: 300px;
     background-color: #fdfdfd;
     border-radius: 3px;
     padding: 10px;
-    
+
 }
 
 
@@ -234,7 +246,7 @@ footer {
     display: flex;
     justify-content: center;
     font-weight: bold;
-    
+
 }
 
 .title-entrar {
@@ -243,18 +255,18 @@ footer {
     justify-content: center;
     font-weight: bold;
     font-size: 10px;
-    
+
 }
 
 legend {
     font-size: 28px;
     margin-bottom: 20px;
-    
+
 }
 
 fieldset {
     border: none;
-    
+
 }
 
 .campo-cadastro {
@@ -268,13 +280,13 @@ fieldset input {
     width: 300px;
     border-radius: 3px;
     height: 30px;
-    
+
 }
 
 fieldset label {
     font-size: 20px;
     font-weight: bold;
-    
+
 }
 
 #field-input-check {
@@ -282,21 +294,21 @@ fieldset label {
     width: 100%;
     justify-content: space-around;
     align-items: center;
-    
-    
+
+
 }
 
 #field-input-check input {
     display: flex;
     width: 20px;
-    
+
 }
 
 .buttons {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+
     width: 100%;
     height: 70px;
 }
@@ -310,11 +322,26 @@ fieldset label {
     font-weight: bold;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.427);
     cursor: pointer;
-    
+
+}
+
+.buttons div {
+    width: 100px;
+    height: 50px;
+    border-radius: 4px;
+    border: none;
+    color: white;
+    font-weight: bold;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.427);
+    cursor: pointer;
+
 }
 
 #voltar {
     background-color: rgb(255, 36, 36);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #voltar:hover {
@@ -343,8 +370,8 @@ fieldset label {
     width: 100%;
     height: 100%;
     flex-wrap: wrap;
-    
-    
+
+
 
 }
 
@@ -354,7 +381,7 @@ fieldset label {
     background-color: #a15012;
     margin-bottom: 10px;
     font-weight: bold;
-    
+
 
 }
 
@@ -372,31 +399,31 @@ fieldset label {
     background-color: rgb(121, 121, 121);
     width: 80%;
     height: 1px;
-    
+
 }
 
-.receita-img{
+.receita-img {
     width: 90%;
-    
+
 }
 
-.receita-info{
+.receita-info {
     width: 90%;
-    
+
     margin: auto;
 }
 
-.receita-info{
+.receita-info {
     color: white;
-    font-size: clamp(12px,2vw,15px);
+    font-size: clamp(12px, 2vw, 15px);
     margin-top: 2px;
 }
 
-h4{
-font-weight: bold;
+h4 {
+    font-weight: bold;
 }
 
-h2{
+h2 {
     color: #d96811dd;
     margin-bottom: 20px;
     margin-top: 20px;
