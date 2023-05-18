@@ -78,26 +78,34 @@ header input::placeholder{
 }
 
 main{
-    display: flex;
     height: 100%;
     flex-wrap: wrap;
     width: 100%;
-    justify-content: center;
+
 }
 
-.left-main, .right-main{
-    width: 530px;
-    height: 400px;
+.up-main{
+    width: 100%;
+    height: 429px;
     background-color: lightgray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+}
+
+.down-main{
+    width: 100%;
+    height: 450px;
+    background-color: greenyellow;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.right-main{
-    background-color: greenyellow;
 
-}
 
 #world_map{
     height: 100%;
@@ -110,16 +118,56 @@ main{
     animation: mymove 10s infinite;
 }
 
-@keyframes mymove{
-    from{left: 130px; bottom:170px;}
-    14.2%{left: 260px; bottom:295px;}
-    28.4%{left: 80px; bottom:295px;}
-    56.8%{left: 260px; bottom:215px;}
-    71%{left: 400px; bottom:295px;}
-    85.2%{left:450px; bottom:160px;}
-    to{left: 130px; bottom:170px;}
+#nuvem1{
+    animation: mymove1 8s infinite;
+}
 
+#nuvem2{
+    animation: mymove2 4s infinite;
+}
 
+#nuvem3{
+    animation: mymove3 6s infinite;
+}
 
+#nuvem4{
+    animation: mymove4 2s infinite;
+}
 
+#aviao{
+    animation: mymoveAviao 20s infinite;
+    position: relative;
+}
+
+.nuvem{
+    height: 100px;
+    position: relative;
+    right: 0;
+}
+@keyframes mymove1{
+    from {top: -50px; right: -1000px;}
+    to {top: -50px; right: 100%;}
+}
+@keyframes mymove2{
+    from {top: -150px; right: -2000px;}
+    to {top: -150px; right: 100%;}
+}
+
+@keyframes mymove3{
+    from {top: -200px; right: -3000px;}
+    to {top: -200px; right: 100%;}
+}
+
+@keyframes mymove4{
+    from {top: 100px; right: -500px;}
+    to {top: 100px; right: 100%;}
+}
+
+@keyframes mymoveAviao{
+    from {top: -50px; right: 300px;}
+    20% {top: -10px; right: 200px;}
+    40% {top: -25px; right: 260px;}
+    60% {top: 0px; right: 310px;}
+    80% {top: 20px; right: 190px;}
+    to {top: -50px; right: 300px;}
 }
