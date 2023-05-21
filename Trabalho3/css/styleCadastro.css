@@ -1,0 +1,191 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color: #E6E3D5;
+    --secondary-colors: #9C709A;
+    --font-color: #2E2222;
+    --header-font:'Libre Baskerville', serif;;
+    --body-font:'DM Sans', sans-serif;
+    --hand-font: 'Caveat', cursive;;
+}
+
+*{
+    font-family: var(--header-font);
+}
+body{
+    background-color: #70506f;
+    height: 100vh;
+    width: 100vw;
+    padding-top:60px;
+}
+
+.cadastro-box{
+    height: 450px;
+    width: 650px;
+    background-color: var(--main-color);
+    border-radius: 10px;
+    margin: auto;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    
+
+    display: grid;
+    grid-template-columns: (2,100px);
+    grid-template-areas: 
+    "a b";
+}
+
+.left-side{
+    background-color: var(--main-color);
+
+    width: 325px;
+    border-radius: 8px 0px 0px 8px;
+    grid-area: "a";
+    display: grid;
+    grid-template-rows: (2,100px);
+    grid-template-areas: 
+    "up"
+    "mid-up"
+    "mid-down"
+    "down";
+
+}
+.right-side{
+    grid-area: "b";
+    border-radius: 0px 8px 8px 0px;
+    width: 325px;
+    background-color: var(--secondary-colors);
+
+}
+
+.cadastro-title{
+    grid-area: up;
+    text-align: center;
+    margin-top: 25px;
+    height: 50px;
+}
+
+
+
+#logo-cadastro{
+    margin: auto;
+    grid-area: "up";
+}
+
+#titulo-cadastro{
+    color: var(--font-color);
+    font-size: 23px;
+    text-align: center;
+    grid-area: "mid-up";
+}
+
+#p-cadastro{
+    align-items: center;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+    color: var(--font-color);
+}
+
+#airplane-icon{
+    text-align: center;
+}
+
+fieldset{
+    border: none;
+    width: 100%;
+    height: 100%;
+    padding-top: 5px;
+}
+
+fieldset h1{
+    text-align: center;
+    margin-top: 10px;
+    color: var(--main-color);
+    
+}
+
+.info-block{
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 20px;
+    color: var(--main-color);
+}
+
+.info-block input{
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #fdfdfd;
+    background-color: var(--secondary-colors);
+    height: 30px;
+    color: #fdfdfd;
+}
+
+.info-block label{
+    font-size: 20px;
+    font-family: var(--font-color);
+}
+
+::placeholder{
+    color: #fdfdfda1;
+}
+
+.cadastrar-voltar{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#voltar, #cadastrar{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    font-family: var(--body-font);
+    font-weight: bold;
+    background-color: var(--main-color);
+    color: var(--font-color);
+    cursor: pointer;
+    transition: 0.7s;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+#voltar:hover, #cadastrar:hover{
+    background-color: #70506F;
+    color: var(--main-color);
+}
+
+.criar-conta{
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: var(--main-color);
+    text-align: center;
+}
+
+#clique-aqui{
+    color: #fdfdfd;
+    transition: 0.7s;
+}
+
+#clique-aqui:hover{
+    color: #362436;
+}
+
+
+
+#frase-sonhador{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: justify;
+    color: var(--main-color);
+    margin-top: 20px;
+}

@@ -1,19 +1,25 @@
-  @import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
 
   @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+
+  @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap');
 
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+
 }
+
+
 
 :root{
     --main-color: #E6E3D5;
     --secondary-colors: #9C709A;
     --font-color: #2E2222;
-    --header-font:'PT Serif', serif;
+    --header-font:'Libre Baskerville', serif;;
     --body-font:'DM Sans', sans-serif;
+    --hand-font: 'Caveat', cursive;;
 }
 
 body{
@@ -29,6 +35,8 @@ header{
     color: var(--font-color);
     padding-left: 25px;
     padding-right: 25px;
+    background-color: var(--main-color);
+
 
 }
 
@@ -87,9 +95,8 @@ main{
 .up-main{
     width: 100%;
     height: 429px;
-    background-color: lightgray;
     display: flex;
-    justify-content: center;
+    justify-content: right;
     align-items: center;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -98,14 +105,24 @@ main{
 
 .down-main{
     width: 100%;
-    height: 450px;
-    background-color: greenyellow;
+    height: 350px;
+    background-color: #E6E3D5;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    flex-wrap: wrap;
+
 }
 
+.frase-chamado{
+    font-family: var(--header-font);
+    color: var(--font-color);
+    width: 500px;
+    font-size: clamp(18px,2vw,25px);
 
+}
 
 #world_map{
     height: 100%;
@@ -118,56 +135,132 @@ main{
     animation: mymove 10s infinite;
 }
 
-#nuvem1{
-    animation: mymove1 8s infinite;
+.bloco-chamado{
+    max-height: 200px;
+    max-width: 200px;
 }
 
-#nuvem2{
-    animation: mymove2 4s infinite;
+.left-block, .right-block{
+    width: 47%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#nuvem3{
-    animation: mymove3 6s infinite;
+::-webkit-scrollbar
+{
+	width: 7px;
+	background-color: #F5F5F5;
 }
 
-#nuvem4{
-    animation: mymove4 2s infinite;
+::-webkit-scrollbar-thumb
+{
+	background-color: #b3afa0;
 }
 
-#aviao{
-    animation: mymoveAviao 20s infinite;
-    position: relative;
+.welcome-text{
+    width: 450px;
+    font-size: clamp(15px,2vw,18px);
+    text-indent: 1rem;
+    font-family: var(--header-font);
 }
 
-.nuvem{
+.left-block{
+    padding: 20px;
+    text-align: justify;
+    max-height: none;
+    border-right: 1px solid var(--font-color);
+}
+
+.background-box{
+    z-index: -1;
+    background-color: lightgray;
+    width: 100%;
+    height: 529px;
+    position: absolute;
+}
+
+.aux-header{
     height: 100px;
-    position: relative;
-    right: 0;
-}
-@keyframes mymove1{
-    from {top: -50px; right: -1000px;}
-    to {top: -50px; right: 100%;}
-}
-@keyframes mymove2{
-    from {top: -150px; right: -2000px;}
-    to {top: -150px; right: 100%;}
 }
 
-@keyframes mymove3{
-    from {top: -200px; right: -3000px;}
-    to {top: -200px; right: 100%;}
+.aux-box{
+    height: 429px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-@keyframes mymove4{
-    from {top: 100px; right: -500px;}
-    to {top: 100px; right: 100%;}
+.p-box{
+    text-align: center;
 }
 
-@keyframes mymoveAviao{
-    from {top: -50px; right: 300px;}
-    20% {top: -10px; right: 200px;}
-    40% {top: -25px; right: 260px;}
-    60% {top: 0px; right: 310px;}
-    80% {top: 20px; right: 190px;}
-    to {top: -50px; right: 300px;}
+.hand-writing{
+    font-family: var(--hand-font);
+    color: var(--secondary-colors);
+    font-size: clamp(25px,2vw,35px);
+    font-weight: bold;
+}
+
+.espaco-p{
+    margin-bottom: 100px;
+}
+
+.cor-secundaria{
+    color: var(--secondary-colors);
+    font-weight: bold;
+}
+
+#world-stamp{
+    height: 80%;
+}
+
+.box-cadastro{
+    width: 97vw;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn-cadastro{
+    height: 50%;
+    width: 200px;
+    border: none;
+    font-family: var(--body-font);
+    font-weight: bold;
+    color: #FDFDFD;
+
+    background-color: var(--secondary-colors);
+    border-radius: 5px;
+
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+#btn-cadastro:hover{
+    background-color: #553453;
+    
+}
+
+footer{
+    height: 150px;
+    width: 100%;
+    background-color: #553453;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    font-family: var(--body-font);
+    font-weight: bold;
+    color: #FDFDFD;
+}
+
+#cadastro-link{
+    height: 100%;
 }
