@@ -181,11 +181,30 @@ fieldset h1{
 }
 
 
-
 #frase-sonhador{
     padding-left: 20px;
     padding-right: 20px;
     text-align: justify;
     color: var(--main-color);
     margin-top: 20px;
+}
+
+@media(max-width: 750px) {
+    .cadastro-box{
+        grid-template-areas: 
+        "a"
+        "b"
+        ;
+        width: 300px;
+        height: 850px;
+    }
+
+    .left-side{
+        border-radius: 5px 5px 0px 0px;
+        width: 100%;
+    }
+    .right-side{
+        width: 100%;
+        border-radius: 0px 0px 5px 5px;
+    }
 }
