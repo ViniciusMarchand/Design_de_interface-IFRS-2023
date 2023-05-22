@@ -9,7 +9,7 @@
   Trabalho2: https://viniciusmarchand.github.io/Design_de_interface-IFRS-2023/Trabalho2/html/index.html
 </div>
 <div>
-  Trabalho2: https://viniciusmarchand.github.io/Design_de_interface-IFRS-2023/Trabalho3/template/aboutSite.html
+  Trabalho3: https://viniciusmarchand.github.io/Design_de_interface-IFRS-2023/Trabalho3/template/aboutSite.html
 
 </div>
 
