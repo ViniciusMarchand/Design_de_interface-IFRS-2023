@@ -24,7 +24,7 @@
 
 body{
     background-color: var(--main-color);
-    height: 81vh;
+    max-height: none;
 }
 
 header{
@@ -263,4 +263,39 @@ footer{
 
 #cadastro-link{
     height: 100%;
+}
+
+
+@media(max-width: 750px) {
+    .down-main{
+        display: flex;
+        height: 500px;
+
+    }
+
+    .left-block{
+        border-right: none;
+        width: 300px;
+        height: 250px;
+    }
+
+    .right-block{
+        height: 400px;
+    }
+    #world-stamp{
+        height: 250px;
+    }
+
+    .frase-chamado{
+        width: 300px;
+    }
+
+    #cadastro-link{
+        margin-top: 150px;
+    }
+
+    footer{
+        margin-top: 100px;
+    }
+
 }

@@ -51,3 +51,10 @@
     80% {top: 20px; right: 190px;}
     to {top: -50px; right: 300px;}
 }
+
+@media(max-width: 750px) {
+    
+#aviao{
+    display: none;
+}
+}

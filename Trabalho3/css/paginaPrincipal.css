@@ -8,6 +8,15 @@ body{
     height: 650px;
 }
 
+:root{
+    --main-color: #E6E3D5;
+    --secondary-colors: #9C709A;
+    --font-color: #2E2222;
+    --header-font:'Libre Baskerville', serif;;
+    --body-font:'DM Sans', sans-serif;
+    --hand-font: 'Caveat', cursive;;
+}
+
 header{
     grid-area: "x";
 }
@@ -28,16 +37,125 @@ footer{
     grid-area: "a";
     height: 100%;
     width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .right-grid{
     grid-area: "b";
     height: 100%px;
     width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .nav-box{
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
+    font-family: font;
+    margin-bottom: 20px;
 }
+.nav-box p{
+    text-align: center;
+    font-family: var(--header-font);
+    color: var(--font-color);
+    cursor: pointer;
+    transition: 0.7s;
+    font-size: 20px;
+}
+
+.nav-box p:hover{
+    color: var(--secondary-colors);
+    font-size: 21px;
+}
+
+.nav-all-box{
+    border: 1px solid var(--font-color);
+    width: 70%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--font-color);
+
+}
+
+.nav-all-box:hover{
+    border: 3px solid var(--secondary-colors);
+}
+
+.main-text{
+    width: 400px;
+    font-family: var(--header-font);
+    color: var(--font-color);
+}
+.img-box{
+    width: 400px;
+}
+.all-main-box{
+    display: flex;
+    text-align: justify;
+    justify-content: space-around;
+    width: 900px;
+}
+
+#servicos-title{
+    font-family: var(--header-font);
+    color: var(--font-color);
+    text-decoration: underline;
+}
+
+.hand-writing-main{
+    font-family: var(--hand-font);
+    font-size: 35px;
+    color: darkgreen;
+}
+
+.img-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.img-box h1{
+
+    font-size: 15px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.img-box p{
+
+    text-align: center;
+    font-size: 30px;
+
+}
+
+.btn-servico{
+    width: 300px;
+    height: 100px;
+    border: none;
+    border-radius: 40px;
+    text-align: center;
+    margin: auto;
+    font-size: 18px;
+    font-family: var(--body-font);
+    background-color: var(--secondary-colors);
+    color: var(--main-color);
+    font-weight: bold;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    cursor: pointer;
+    transition: 0.7s;
+
+}
+
+.btn-servico:hover{
+    background-color: #553c54;
+
+}
+
