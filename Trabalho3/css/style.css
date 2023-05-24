@@ -224,7 +224,9 @@ main{
     justify-content: center;
     align-items: center;
 }
-
+form{
+    height: 100%;
+}
 #btn-cadastro{
     height: 50%;
     width: 200px;
@@ -232,7 +234,6 @@ main{
     font-family: var(--body-font);
     font-weight: bold;
     color: #FDFDFD;
-
     background-color: var(--secondary-colors);
     border-radius: 5px;
 
@@ -327,5 +328,9 @@ nav{
     }
     .left-header{
         justify-content: left;
+    }
+    #btn-cadastro{
+        margin-top: 60px;
+
     }
 }
