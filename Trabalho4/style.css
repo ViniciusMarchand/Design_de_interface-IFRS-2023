@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Yellowtail&display=swap');
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family:'Cabin', sans-serif;
+}
+:root{
+    --main-color: #0A0C0B;
+}
+body{
+
+    height: 1000px;
+    background-color: var(--main-color);
+}
+
+#header-logo{
+    height: 100px;
+}
+
+.navbar, .nav-link{
+    padding: 0;
+    background-color:var(--main-color)!important;
+    color: #fdfdfd;
+    font-size: 20px;   
+}
+.navbar{
+    padding-right: 20px;
+    position: sticky;
+    top: 0;
+    border-bottom: 1px solid #fdfdfdc0;
+
+}
+.nav-link:hover{
+    color: #fdfdfd8e;
+}
+
+.icones{
+    font-size: 30px;
+    margin-left: 20px;
+}
+
+
+
+.home-button:focus, .menu-button:focus{
+    color: #fdfdfd!important;
+}
