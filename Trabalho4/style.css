@@ -15,6 +15,10 @@ body{
 }
 section{
     color: #fdfdfd;
+    height: 500px;
+}
+section h1{
+    text-align: center;
 }
 
 #header-logo{
@@ -62,12 +66,10 @@ header{
 .left-side, .right-side{
     width: 50%;
     height: 85vh;
-    display: flex;
-    align-items: start;
-    justify-content: center;
+
 }
 
-#img-welcome-section{
+.image-section{
     width: 400px;
 }
 
@@ -75,8 +77,18 @@ header{
     margin-top: 50px;
 }
 
-.welcome-section p, .atividades-section p{
+.welcome-section p, .atividades-section p, .comida-section p{
     font-size: 30px;
     font-weight: bold;
     color: #fdfdfd;
+}
+
+.text-section{
+    margin-top: 50px;
+}
+
+.right-image{
+    display: flex;
+    flex-direction: column;
+    align-items:  end;
 }
