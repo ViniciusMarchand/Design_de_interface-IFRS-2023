@@ -13,6 +13,9 @@ body{
     height: 1000px;
     background-color: var(--main-color);
 }
+section{
+    color: #fdfdfd;
+}
 
 #header-logo{
     height: 100px;
@@ -26,10 +29,13 @@ body{
 }
 .navbar{
     padding-right: 20px;
-    position: sticky;
-    top: 0;
+
     border-bottom: 1px solid #fdfdfdc0;
 
+}
+header{
+    position: sticky;
+    top: 0;
 }
 .nav-link:hover{
     color: #fdfdfd8e;
@@ -40,8 +46,37 @@ body{
     margin-left: 20px;
 }
 
-
+.icones:hover{
+    color: #fdfdfd8e;
+    cursor: pointer;
+}
 
 .home-button:focus, .menu-button:focus{
     color: #fdfdfd!important;
+}
+
+.container{
+    display: flex;
+}
+
+.left-side, .right-side{
+    width: 50%;
+    height: 85vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+}
+
+#img-welcome-section{
+    width: 400px;
+}
+
+.welcome-section{
+    margin-top: 50px;
+}
+
+.welcome-section p, .atividades-section p{
+    font-size: 30px;
+    font-weight: bold;
+    color: #fdfdfd;
 }
