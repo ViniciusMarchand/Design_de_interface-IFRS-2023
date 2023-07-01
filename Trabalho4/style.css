@@ -4,18 +4,22 @@
     padding: 0;
     margin: 0;
     font-family:'Cabin', sans-serif;
+    overflow-x: hidden;
 }
 :root{
     --main-color: #0A0C0B;
 }
+#primeirp-titulo{
+    margin-top: 170px;
+}
 body{
 
-    height: 1000px;
+    min-height: 1000px;
     background-color: var(--main-color);
 }
 section{
     color: #fdfdfd;
-    height: 500px;
+    min-height: 500px;
 }
 section h2{
     text-align: center;
@@ -123,4 +127,100 @@ header{
 #precos{
     display: flex;
     flex-direction: column;
+}
+
+footer{
+    color: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #fdfdfd71;
+}
+
+@media(max-width: 750px) {
+
+   section .container{
+    display: flex;
+    flex-direction: column  ;
+   }
+
+   section h2{
+    margin-top: 50px;
+   }
+
+   .left-side{
+    height: 250px!important;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .image-section{
+    width: 230px;
+   }
+
+   section{
+    width: 100%;
+   }
+   .right-side{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 200px!important;
+
+   }
+
+   .right-side p, .text-section p{
+    font-size:18px;
+    text-align: center;
+   }
+
+   .right-image{
+    margin-top: 150px;
+    display: flex!important;
+    justify-content: start!important;
+    align-items: center!important;
+    width: 100%!important;
+   }
+   header{
+    width: 100vw;
+   }
+   .navbar{
+    padding-right: 0;
+   }
+   .container-fluid{
+    padding: 0;
+   }
+   #carouselExample{
+    width: 250px;
+   }
+   #tabela-precos{
+    width: 100%;
+    }
+   #section-carrosel{
+    height: 100px;
+    width: 100%;
+   }
+
+   .card{
+    margin-top: 10px;
+    margin-bottom: 10px;
+   }
+   .card-block{
+    width: 100%!important;
+    margin-top: 100px;
+    align-items: center;
+   }
+   .ultimo{
+    display: contents;
+    margin: auto;
+    }
+    #section-carrosel{
+        height: 200px;
+    }
+
 }
