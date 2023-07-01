@@ -4,7 +4,6 @@
     padding: 0;
     margin: 0;
     font-family:'Cabin', sans-serif;
-    overflow-x: hidden;
 }
 :root{
     --main-color: #0A0C0B;
